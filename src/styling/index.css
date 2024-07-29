@@ -1,0 +1,119 @@
+/* default settings */
+@font-face {
+  font-family: 'Quicksand';
+  src: local('Quicksand'),
+    url(../assets/fonts/Quicksand-VariableFont_wght.ttf) format('truetype');
+}
+
+:root {
+  --dark-blue: #081a64;
+  --light-blue: #a8d2fc;
+  --orange: #efb758;
+  --beige: #f1dab0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-family: 'Quicksand';
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+h2 {
+  font-family: 'Quicksand';
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--dark-blue);
+}
+
+h3 {
+  font-family: 'Quicksand';
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+p {
+  font-family: 'Quicksand';
+  font-size: 12;
+  color: var(--dark-blue);
+  line-height: 30px;
+}
+
+a {
+  font-family: 'Quicksand';
+  color: var(--dark-blue);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+
+span {
+  font-family: 'Quicksand';
+  font-size: 12;
+  color: var(--dark-blue);
+}
+
+button {
+  font-family: 'Quicksand';
+  border-radius: 100px;
+  padding: 10px 30px 10px 30px;
+  transition: 0.5s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+nav {
+  background-color: var(--dark-blue);
+  margin: 0px;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* form{
+  } */
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid var(--dark-blue);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: 'Quicksand';
+}
+
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid var(--dark-blue);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: 'Quicksand';
+  max-width: 90%;
+  /* min-width: 475px; */
+}
+
+/* input[type='text']:focus {
+    border: none;
+  } */
+
+::placeholder {
+  color: var(--dark-blue);
+}
