@@ -80,9 +80,7 @@ export function MobileForm() {
     setResult('Sending....');
     const formData = new FormData(event.target);
 
-    // you have to sign his email up on https://web3forms.com/#start
-    // get his access key and put it here!
-    formData.append('access_key', '66d7fffa-86bb-4037-bdcf-9d74d375b4c2');
+    formData.append('access_key', '6e6c8643-b395-49a8-9bcb-6852fdld943d');
 
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',

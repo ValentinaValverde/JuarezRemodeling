@@ -128,7 +128,16 @@ export function Portfolio() {
             </p>
           ) : (
             <p>
-              Different text about the full home renovation in MT. Gilead here!
+              This whole-home remodel was for a Mt. Gilead client in Murrells
+              Inlet, SC. The Juarez team replaced subfloors and installed all
+              new flooring throughout the home. We also removed walls to create
+              an open-floor concept, as well as added additional features such
+              as walk-in closets, a patio, and even French doors. In addition to
+              the carpentry completed, we gutted/replaced the entire plumbing
+              system, and shored up faulty electrical outlets to ensure a
+              perfectly remodeled home. Within a short period of time, our
+              client was able to sell her newly renovated home above market
+              value and move into the home of her dreams.
             </p>
           )}
         </div>
@@ -246,8 +255,17 @@ export function TabletPortfolio() {
           ) : (
             <>
               <p>
-                Different text about the full home renovation in MT. Gilead
-                here!
+                This whole-home remodel was for a Mt. Gilead client in Murrells
+                Inlet, SC. The Juarez team replaced subfloors and installed all
+                new flooring throughout the home. We also removed walls to
+                create an open-floor concept, as well as added additional
+                features such as walk-in closets, a patio, and even French
+                doors. In addition to the carpentry completed, we
+                gutted/replaced the entire plumbing system, and shored up faulty
+                electrical outlets to ensure a perfectly remodeled home. Within
+                a short period of time, our client was able to sell her newly
+                renovated home above market value and move into the home of her
+                dreams.
               </p>
               <p style={{ fontWeight: 'bold' }}>
                 Click an image to expand your view.
@@ -371,8 +389,17 @@ export function MobilePortfolio() {
           ) : (
             <>
               <p>
-                Different text about the full home renovation in MT. Gilead
-                here!
+                This whole-home remodel was for a Mt. Gilead client in Murrells
+                Inlet, SC. The Juarez team replaced subfloors and installed all
+                new flooring throughout the home. We also removed walls to
+                create an open-floor concept, as well as added additional
+                features such as walk-in closets, a patio, and even French
+                doors. In addition to the carpentry completed, we
+                gutted/replaced the entire plumbing system, and shored up faulty
+                electrical outlets to ensure a perfectly remodeled home. Within
+                a short period of time, our client was able to sell her newly
+                renovated home above market value and move into the home of her
+                dreams.
               </p>
               <p style={{ fontWeight: 'bold' }}>
                 Click an image to expand your view.

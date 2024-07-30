@@ -46,7 +46,7 @@ export function Footer() {
 
           <div>
             <a
-              href="https://www.google.com/search?q=juarez+remodeling&oq=Juarez+Rem&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgYIAhBFGDkyCAgDEAAYFhgeMggIBBAAGBYYHjIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPKgCALACAA&sourceid=chrome&ie=UTF-8"
+              href="https://www.google.com/search?q=Juarez%20Remodeling&stick=H4sIAAAAAAAA_-NgU1IxqLCwMLVIMbe0SEtJSzE2Sja1MqhIMUgzMDVJtUi2SEpNNE9ZxCroVZpYlFqlEJSam5-SmpOZlw4AWG22mTwAAAA&hl=en-US&mat=CQKXHLmqFReVElcBEKoLaZx0l6Rsm9vTE65oPdEP5-5ZrFtRgoASm8U9Ob14RrydegFc4zI3neWWIer0ALGeM-fucBk_rp_05oMz3wj5-en24x2Ldj369FeSoka6K0tdKP0&authuser=0&ved=0CAEQrMcEahcKEwioj6vL28yHAxUAAAAAHQAAAAAQAg"
               target="_blank"
               onMouseEnter={() => setGoogleIcon(true)}
               onMouseLeave={() => setGoogleIcon(false)}
@@ -134,7 +134,7 @@ export function TabletFooter() {
 
         <div>
           <a
-            href="https://www.google.com/search?q=juarez+remodeling&oq=Juarez+Rem&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgYIAhBFGDkyCAgDEAAYFhgeMggIBBAAGBYYHjIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPKgCALACAA&sourceid=chrome&ie=UTF-8"
+            href="https://www.google.com/search?q=Juarez%20Remodeling&stick=H4sIAAAAAAAA_-NgU1IxqLCwMLVIMbe0SEtJSzE2Sja1MqhIMUgzMDVJtUi2SEpNNE9ZxCroVZpYlFqlEJSam5-SmpOZlw4AWG22mTwAAAA&hl=en-US&mat=CQKXHLmqFReVElcBEKoLaZx0l6Rsm9vTE65oPdEP5-5ZrFtRgoASm8U9Ob14RrydegFc4zI3neWWIer0ALGeM-fucBk_rp_05oMz3wj5-en24x2Ldj369FeSoka6K0tdKP0&authuser=0&ved=0CAEQrMcEahcKEwioj6vL28yHAxUAAAAAHQAAAAAQAg"
             target="_blank"
           >
             <img src={GoogleIcon} className="tablet-footer-icon" />
@@ -205,7 +205,7 @@ export function MobileFooter() {
 
         <div>
           <a
-            href="https://www.google.com/search?q=juarez+remodeling&oq=Juarez+Rem&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgYIAhBFGDkyCAgDEAAYFhgeMggIBBAAGBYYHjIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPKgCALACAA&sourceid=chrome&ie=UTF-8"
+            href="https://www.google.com/search?q=Juarez%20Remodeling&stick=H4sIAAAAAAAA_-NgU1IxqLCwMLVIMbe0SEtJSzE2Sja1MqhIMUgzMDVJtUi2SEpNNE9ZxCroVZpYlFqlEJSam5-SmpOZlw4AWG22mTwAAAA&hl=en-US&mat=CQKXHLmqFReVElcBEKoLaZx0l6Rsm9vTE65oPdEP5-5ZrFtRgoASm8U9Ob14RrydegFc4zI3neWWIer0ALGeM-fucBk_rp_05oMz3wj5-en24x2Ldj369FeSoka6K0tdKP0&authuser=0&ved=0CAEQrMcEahcKEwioj6vL28yHAxUAAAAAHQAAAAAQAg"
             target="_blank"
           >
             <img src={GoogleIcon} className="tablet-footer-icon" />
