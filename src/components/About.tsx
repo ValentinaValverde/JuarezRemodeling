@@ -33,31 +33,23 @@ export function About() {
           </p>
         </div>
       </div>
-      {/* video */}
-      {/* 
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-          }}
-        >
-          <video style={{ width: 800, maxWidth: '100%' }} controls>
-            <source src={Video} type="video/mp4" />
-          </video>
-        </div> */}
-      {/* <ReactPlayer url="https://vimeo.com/352786895" controls />; */}
 
-      <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+      <div
+        style={{
+          padding: 50,
+          position: 'relative',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
         <iframe
           src="https://player.vimeo.com/video/991717617?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          // frameBorder="0"
-          // allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
           style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
+            width: 800,
+            height: 450,
+            border: 'none',
+            maxWidth: '100%',
           }}
           title="Juarez Testimonial Video"
         ></iframe>
@@ -97,17 +89,27 @@ export function TabletAbout() {
       </div>
 
       {/* video */}
-
       <div
         style={{
+          padding: 50,
+          position: 'relative',
           display: 'flex',
           justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
-        <video style={{ width: 600, maxWidth: '100%' }} controls>
-          {/* <source src={Video} type="video/mp4" /> */}
-        </video>
+        <iframe
+          src="https://player.vimeo.com/video/991717617?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          style={{
+            width: 800,
+            height: 400,
+            border: 'none',
+            maxWidth: '100%',
+          }}
+          title="Juarez Testimonial Video"
+        ></iframe>
       </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
     </>
   );
 }
@@ -144,17 +146,27 @@ export function MobileAbout() {
       </div>
 
       {/* video */}
-
       <div
         style={{
+          padding: 50,
+          position: 'relative',
           display: 'flex',
           justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
-        <video style={{ width: 350, maxWidth: '100%' }} controls>
-          {/* <source src={Video} type="video/mp4" /> */}
-        </video>
+        <iframe
+          src="https://player.vimeo.com/video/991717617?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          style={{
+            width: 350,
+            height: 200,
+            border: 'none',
+            maxWidth: '100%',
+          }}
+          title="Juarez Testimonial Video"
+        ></iframe>
       </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
     </>
   );
 }

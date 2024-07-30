@@ -342,10 +342,10 @@ export function MobileExperience() {
           width: '100%',
           marginTop: 30,
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: 'center',
         }}
       >
-        <div style={{ textAlign: 'center' }}>
+        <div style={{ textAlign: 'center', marginRight: 50 }}>
           <p className="white-text">Myrtle Beach</p>
           <p className="white-text">Murrells Inlet</p>
           <p className="white-text">Surfsude Beach</p>
