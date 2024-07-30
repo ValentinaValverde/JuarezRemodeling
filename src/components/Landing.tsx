@@ -9,9 +9,18 @@ export function Landing() {
           filter: 'brightness(75%)',
         }}
       >
-        <video style={{ width: '100%', maxWidth: '100%' }} autoPlay loop muted>
-          {/* <source src={HeroVideo} type="video/mp4" /> */}
-        </video>
+        {/* <video style={{ width: '100%', maxWidth: '100%' }} autoPlay loop muted> */}
+        {/* <source src={HeroVideo} type="video/mp4" /> */}
+        {/* </video> */}
+
+        <iframe
+          src="https://player.vimeo.com/video/991717617?autoplay=1&loop=1&autopause=0"
+          width="100%"
+          height="100%"
+          // frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+          // title="Juarez Testimonial Video"
+        ></iframe>
       </div>
 
       <div

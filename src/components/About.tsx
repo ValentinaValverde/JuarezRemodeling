@@ -44,7 +44,7 @@ export function About() {
         }}
       >
         <iframe
-          src="https://player.vimeo.com/video/991717617?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          src="https://player.vimeo.com/video/991717617?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           style={{
             width: 800,
             height: 450,
@@ -54,7 +54,6 @@ export function About() {
           title="Juarez Testimonial Video"
         ></iframe>
       </div>
-      <script src="https://player.vimeo.com/api/player.js"></script>
     </>
   );
 }
@@ -99,7 +98,7 @@ export function TabletAbout() {
         }}
       >
         <iframe
-          src="https://player.vimeo.com/video/991717617?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          src="https://player.vimeo.com/video/991717617?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           style={{
             width: 800,
             height: 400,
@@ -109,7 +108,6 @@ export function TabletAbout() {
           title="Juarez Testimonial Video"
         ></iframe>
       </div>
-      <script src="https://player.vimeo.com/api/player.js"></script>
     </>
   );
 }
@@ -156,7 +154,7 @@ export function MobileAbout() {
         }}
       >
         <iframe
-          src="https://player.vimeo.com/video/991717617?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          src="https://player.vimeo.com/video/991717617?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           style={{
             width: 350,
             height: 200,
@@ -166,7 +164,6 @@ export function MobileAbout() {
           title="Juarez Testimonial Video"
         ></iframe>
       </div>
-      <script src="https://player.vimeo.com/api/player.js"></script>
     </>
   );
 }
