@@ -1,57 +1,80 @@
-import GoogleReviewCard from './GoogleReviewCard';
+import { useMediaQuery } from 'react-responsive';
+import GoogleCarousel, {
+  TabletGoogleCarousel,
+  MobileGoogleCarousel,
+} from './GoogleCarousel';
+import GoogleRating from '../assets/icons/google-rating.png';
+import GoogleFullLogo from '../assets/icons/google-full-logo.png';
 
 export default function GoogleReviews() {
-  const data = [
-    {
-      photo: '',
-      name: 'Janet Sloan',
-      date: '07/26/2024',
-      stars: 0,
-      review:
-        "Librado and team's experience and integrity are unmatched. We are lucky to have them serve our area.",
-    },
-    {
-      photo: '',
-      name: 'Same Mitchell',
-      date: '07/14/2024',
-      stars: 0,
-      review:
-        'Juarez Remodeling consistently overdelivers with innovation solutions. We will never partner with another contractor.',
-    },
-    {
-      photo: '',
-      name: 'Karen Burch',
-      date: '08/01/2024',
-      stars: 0,
-      review:
-        'Their team has become like family. We could not recommend their talent enough.',
-    },
-    {
-      photo: '',
-      name: 'Name 4',
-      date: '00/00/0000',
-      stars: 0,
-      review: 'lorem ipsum dolor sit amet',
-    },
-  ];
+  const isDesktop = useMediaQuery({ minWidth: 992 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
-    <div style={{ padding: 50 }}>
-      <div style={{ display: 'flex', overflow: 'scroll' }}>
-        {data.map((item, i) => {
-          return (
-            <div key={i}>
-              <GoogleReviewCard
-                photo={item.photo}
-                name={item.name}
-                date={item.date}
-                stars={item.stars}
-                review={item.review}
-              />
+    <>
+      {isDesktop && (
+        <>
+          <div style={{ marginLeft: 100, marginRight: 100 }}>
+            <img
+              src={GoogleFullLogo}
+              style={{ marginBottom: -75, width: 350 }}
+            />
+
+            <div
+              style={{ display: 'flex', alignItems: 'center', marginLeft: 35 }}
+            >
+              <img src={GoogleRating} style={{ width: 250, height: 40 }} />
+              <p style={{ marginLeft: 20, fontSize: 20 }}>
+                5.0 rating of 4 reviews
+              </p>
             </div>
-          );
-        })}
-      </div>
-    </div>
+          </div>
+          <GoogleCarousel />
+        </>
+      )}
+      {isTablet && (
+        <>
+          <div style={{ marginLeft: 100, marginRight: 100 }}>
+            <img
+              src={GoogleFullLogo}
+              style={{ marginBottom: -75, width: 350 }}
+            />
+
+            <div
+              style={{ display: 'flex', alignItems: 'center', marginLeft: 35 }}
+            >
+              <img src={GoogleRating} style={{ width: 250, height: 40 }} />
+              <p style={{ marginLeft: 20, fontSize: 20 }}>
+                5.0 rating of 4 reviews
+              </p>
+            </div>
+          </div>
+          <TabletGoogleCarousel />
+        </>
+      )}
+      {isMobile && (
+        <>
+          <div style={{ marginLeft: 10, marginRight: 20, marginBottom: -15 }}>
+            <img
+              src={GoogleFullLogo}
+              style={{ marginBottom: -40, width: 200 }}
+            />
+
+            <img
+              src={GoogleRating}
+              style={{
+                width: 150,
+                height: 25,
+                marginLeft: 20,
+                marginBottom: -15,
+              }}
+            />
+            <p style={{ marginLeft: 20 }}>5.0 rating of 4 reviews</p>
+          </div>
+          <MobileGoogleCarousel />
+        </>
+      )}
+    </>
   );
 }
