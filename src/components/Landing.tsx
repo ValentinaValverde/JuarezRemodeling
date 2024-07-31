@@ -23,20 +23,6 @@ export function Landing() {
         </video>
       </div>
 
-      {/* <script
-        type="text/javascript"
-        src="https://www.dropbox.com/static/api/2/dropins.js"
-        id="dropboxjs"
-        data-app-key="q70kjp3pv6nmset"
-      ></script> */}
-
-      <iframe
-        src="https://www.dropbox.com/scl/fi/r9ybdi33745ez96q4upjn/HeroVideo.mp4?raw=1"
-        height="480px"
-        width="640px"
-        allowFullScreen
-      ></iframe>
-
       <div
         style={{
           position: 'absolute',
