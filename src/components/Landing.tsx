@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-// import HeroVideo from '../assets/videos/HeroVideo.mp4';
+import HeroVideo from '../assets/videos/HeroVideo.mp4';
 
 export function Landing() {
   return (
@@ -10,17 +10,12 @@ export function Landing() {
         }}
       >
         <video
-          src="https://www.dropbox.com/scl/fi/r9ybdi33745ez96q4upjn/HeroVideo.mp4?rlkey=uvf6dwtket1x70ctdueew1yzm&st=hjekw0sr&dl=0"
-          style={{ width: '100%', maxWidth: '100%' }}
+          src={HeroVideo}
+          style={{ width: '100%' }}
           autoPlay
           loop
           muted
-        >
-          {/* <source
-            src="https://www.dropbox.com/scl/fi/r9ybdi33745ez96q4upjn/HeroVideo.mp4?rlkey=uvf6dwtket1x70ctdueew1yzm&st=hjekw0sr&dl=0"
-            type="video/mp4"
-          /> */}
-        </video>
+        ></video>
       </div>
 
       <div
@@ -91,9 +86,13 @@ export function TabletLanding() {
           overflow: 'hidden',
         }}
       >
-        <video style={{ height: '100%' }} autoPlay loop muted>
-          {/* <source src={HeroVideo} type="video/mp4" /> */}
-        </video>
+        <video
+          src={HeroVideo}
+          style={{ height: '100%' }}
+          autoPlay
+          loop
+          muted
+        ></video>
       </div>
 
       <div
@@ -157,9 +156,13 @@ export function MobileLanding() {
           overflow: 'hidden',
         }}
       >
-        <video style={{ height: '100%' }} autoPlay loop muted>
-          {/* <source src={HeroVideo} type="video/mp4" /> */}
-        </video>
+        <video
+          src={HeroVideo}
+          style={{ height: '100%' }}
+          autoPlay
+          loop
+          muted
+        ></video>
       </div>
 
       <div
