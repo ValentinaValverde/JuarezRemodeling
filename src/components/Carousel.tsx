@@ -78,9 +78,9 @@ export function Carousel({ images }) {
               transform="translate(-3 -3)"
               fill="none"
               stroke="#071a64"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <path
               id="Path_6"
@@ -89,9 +89,9 @@ export function Carousel({ images }) {
               transform="translate(15.25 7.95)"
               fill="none"
               stroke="#071a64"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <path
               id="Path_7"
@@ -100,9 +100,9 @@ export function Carousel({ images }) {
               transform="translate(7.95 15.25)"
               fill="none"
               stroke="#071a64"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
           </g>
         </svg>

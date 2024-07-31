@@ -9,10 +9,33 @@ export function Landing() {
           filter: 'brightness(75%)',
         }}
       >
-        <video style={{ width: '100%', maxWidth: '100%' }} autoPlay loop muted>
-          {/* <source src={HeroVideo} type="video/mp4" /> */}
+        <video
+          src="https://www.dropbox.com/scl/fi/r9ybdi33745ez96q4upjn/HeroVideo.mp4?rlkey=uvf6dwtket1x70ctdueew1yzm&st=hjekw0sr&dl=0"
+          style={{ width: '100%', maxWidth: '100%' }}
+          autoPlay
+          loop
+          muted
+        >
+          {/* <source
+            src="https://www.dropbox.com/scl/fi/r9ybdi33745ez96q4upjn/HeroVideo.mp4?rlkey=uvf6dwtket1x70ctdueew1yzm&st=hjekw0sr&dl=0"
+            type="video/mp4"
+          /> */}
         </video>
       </div>
+
+      {/* <script
+        type="text/javascript"
+        src="https://www.dropbox.com/static/api/2/dropins.js"
+        id="dropboxjs"
+        data-app-key="q70kjp3pv6nmset"
+      ></script> */}
+
+      <iframe
+        src="https://www.dropbox.com/scl/fi/r9ybdi33745ez96q4upjn/HeroVideo.mp4?raw=1"
+        height="480px"
+        width="640px"
+        allowFullScreen
+      ></iframe>
 
       <div
         style={{
