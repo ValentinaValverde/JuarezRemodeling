@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Carousel, TabletCarousel, MobileCarousel } from './Carousel';
+// import { Carousel, TabletCarousel, MobileCarousel } from './Carousel';
 
 import DesktopBackgroundImage from '../assets/images/portfolio-background.png';
 import TabletBackgroundImage from '../assets/images/portfolio-background-tablet.png';
@@ -143,7 +143,7 @@ export function Portfolio() {
         </div>
       </div>
 
-      <Carousel images={pressed ? oasisImages : completeHomeImages} />
+      {/* <Carousel images={pressed ? oasisImages : completeHomeImages} /> */}
     </div>
   );
 }
@@ -277,7 +277,7 @@ export function TabletPortfolio() {
 
       <div style={{ height: 50 }} />
 
-      <TabletCarousel images={pressed ? oasisImages : completeHomeImages} />
+      {/* <TabletCarousel images={pressed ? oasisImages : completeHomeImages} /> */}
     </div>
   );
 }
@@ -409,7 +409,7 @@ export function MobilePortfolio() {
         </div>
       </div>
 
-      <MobileCarousel images={pressed ? oasisImages : completeHomeImages} />
+      {/* <MobileCarousel images={pressed ? oasisImages : completeHomeImages} /> */}
     </div>
   );
 }

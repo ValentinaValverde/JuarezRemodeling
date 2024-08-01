@@ -1,8 +1,13 @@
 import { useState } from 'react';
 
+// interface Image {
+//   src: string;
+//   alt?: string;
+// }
+
 export function Carousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
 
   const next = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 4) % images.length);
@@ -126,7 +131,7 @@ export function Carousel({ images }) {
 
 export function TabletCarousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
 
   const goToNext = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
@@ -225,6 +230,7 @@ export function TabletCarousel({ images }) {
           }}
         >
           <img
+            loading="lazy"
             src={images[(currentIndex - 1 + images.length) % images.length]}
             alt="Previous"
             style={{ ...carouselImageStyle }}
@@ -285,7 +291,7 @@ export function TabletCarousel({ images }) {
 
 export function MobileCarousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
