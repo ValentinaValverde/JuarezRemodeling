@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import GoogleReviewCard, { TabletGoogleReviewCard } from './GoogleReviewCard';
+import RightArrow from '../assets/icons/right-arrow.png';
+import LeftArrow from '../assets/icons/left-arrow.png';
 
 export default function GoogleCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,13 +43,6 @@ export default function GoogleCarousel() {
       review:
         'Their team has become like family. We could not recommend their talent enough.',
     },
-    {
-      photo: '',
-      name: 'Name 4',
-      date: '00/00/0000',
-      stars: 0,
-      review: 'lorem ipsum dolor sit amet',
-    },
   ];
   return (
     <>
@@ -77,7 +72,7 @@ export default function GoogleCarousel() {
             zIndex: 999,
           }}
         >
-          -
+          <img src={LeftArrow} style={{ width: 20 }} />
         </button>
         <div
           style={{
@@ -93,7 +88,6 @@ export default function GoogleCarousel() {
                 photo={item.photo}
                 name={item.name}
                 date={item.date}
-                stars={item.stars}
                 review={item.review}
               />
             </div>
@@ -117,7 +111,7 @@ export default function GoogleCarousel() {
             zIndex: 999,
           }}
         >
-          -
+          <img src={RightArrow} style={{ width: 20 }} />
         </button>
       </div>
     </>
@@ -164,13 +158,6 @@ export function TabletGoogleCarousel() {
       review:
         'Their team has become like family. We could not recommend their talent enough.',
     },
-    {
-      photo: '',
-      name: 'Name 4',
-      date: '00/00/0000',
-      stars: 0,
-      review: 'lorem ipsum dolor sit amet',
-    },
   ];
   return (
     <>
@@ -200,7 +187,7 @@ export function TabletGoogleCarousel() {
             zIndex: 999,
           }}
         >
-          -
+          <img src={LeftArrow} style={{ width: 20 }} />
         </button>
         <div
           style={{
@@ -216,7 +203,6 @@ export function TabletGoogleCarousel() {
                 photo={item.photo}
                 name={item.name}
                 date={item.date}
-                stars={item.stars}
                 review={item.review}
               />
             </div>
@@ -240,7 +226,7 @@ export function TabletGoogleCarousel() {
             zIndex: 999,
           }}
         >
-          -
+          <img src={RightArrow} style={{ width: 20 }} />
         </button>
       </div>
     </>
@@ -287,13 +273,6 @@ export function MobileGoogleCarousel() {
       review:
         'Their team has become like family. We could not recommend their talent enough.',
     },
-    {
-      photo: '',
-      name: 'Name 4',
-      date: '00/00/0000',
-      stars: 0,
-      review: 'lorem ipsum dolor sit amet',
-    },
   ];
   return (
     <>
@@ -323,7 +302,7 @@ export function MobileGoogleCarousel() {
             zIndex: 999,
           }}
         >
-          -
+          <img src={LeftArrow} style={{ width: 20 }} />
         </button>
         <div
           style={{
@@ -337,7 +316,6 @@ export function MobileGoogleCarousel() {
             photo={items[currentIndex].photo}
             name={items[currentIndex].name}
             date={items[currentIndex].date}
-            stars={items[currentIndex].stars}
             review={items[currentIndex].review}
           />
         </div>
@@ -359,7 +337,7 @@ export function MobileGoogleCarousel() {
             zIndex: 999,
           }}
         >
-          -
+          <img src={RightArrow} style={{ width: 20 }} />
         </button>
       </div>
     </>
