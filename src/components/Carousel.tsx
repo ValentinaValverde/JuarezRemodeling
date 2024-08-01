@@ -1,19 +1,19 @@
 import { useState } from 'react';
 
 // interface Image {
-//   src: string;
+//   src: string[];
 //   alt?: string;
 // }
 
-export function Carousel({ images }) {
+export function Carousel(images: string[]) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const next = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 4) % images.length);
   };
 
-  const openModal = (image) => {
+  const openModal = (image: string | null) => {
     setSelectedImage(image);
   };
 
@@ -26,6 +26,7 @@ export function Carousel({ images }) {
       <div className="carousel">
         <div className="carousel-images">
           {images
+            // error here?
             .slice(currentIndex, currentIndex + 4)
             .concat(
               images.slice(0, Math.max(0, (currentIndex + 4) % images.length))
@@ -129,15 +130,16 @@ export function Carousel({ images }) {
   );
 }
 
-export function TabletCarousel({ images }) {
+export function TabletCarousel(images: []) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
+  // const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const goToNext = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
   };
 
-  const openModal = (image) => {
+  const openModal = (image: string | null) => {
     setSelectedImage(image);
   };
 
@@ -289,15 +291,16 @@ export function TabletCarousel({ images }) {
   );
 }
 
-export function MobileCarousel({ images }) {
+export function MobileCarousel(images: []) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
+  // const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  const openModal = (image) => {
+  const openModal = (image: string | null) => {
     setSelectedImage(image);
   };
 
