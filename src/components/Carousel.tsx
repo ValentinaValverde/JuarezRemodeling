@@ -1,11 +1,10 @@
 import { useState } from 'react';
 
-// interface Image {
-//   src: string[];
-//   alt?: string;
-// }
+interface CarouselProps {
+  images: string[];
+}
 
-export function Carousel(images: string[]) {
+export function Carousel({ images }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -130,7 +129,7 @@ export function Carousel(images: string[]) {
   );
 }
 
-export function TabletCarousel(images: []) {
+export function TabletCarousel({ images }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   // const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -291,7 +290,7 @@ export function TabletCarousel(images: []) {
   );
 }
 
-export function MobileCarousel(images: []) {
+export function MobileCarousel({ images }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   // const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
