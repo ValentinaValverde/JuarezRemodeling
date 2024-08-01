@@ -317,9 +317,9 @@ export function MobileCarousel({ images }) {
         <div className="mobile-carousel-content">
           <div
             className="mobile-carousel-inner"
-            // style={{
-            //   transform: `translateX(-${currentIndex * 80}%)`,
-            // }}
+            style={{
+              transform: `translateX(-${currentIndex * 80}%)`,
+            }}
           >
             {images.map((image, index) => (
               <div className="mobile-carousel-item" key={index}>
