@@ -1,6 +1,3 @@
-// import Video from '../assets/videos/TestimonialVideo.mp4';
-// import ReactPlayer from 'react-player';
-
 export function About() {
   return (
     <>
@@ -44,7 +41,10 @@ export function About() {
         }}
       >
         <iframe
+          // link provided:
+          // src="https://player.vimeo.com/video/987222485?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           src="https://player.vimeo.com/video/991717617?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay;fullscreen;picture-in-picture;clipboard-write"
           style={{
             width: 800,
             height: 450,
