@@ -1,30 +1,33 @@
-import React from 'react';
+import React, { FormEvent } from 'react';
 
 export function Form() {
   const [result, setResult] = React.useState('');
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult('Sending....');
-    const formData = new FormData(event.target);
 
-    // you have to sign his email up on https://web3forms.com/#start
-    // get his access key and put it here!
-    formData.append('access_key', '66d7fffa-86bb-4037-bdcf-9d74d375b4c2');
+    if (event.target instanceof HTMLFormElement) {
+      const formData = new FormData(event.target);
 
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: formData,
-    });
+      formData.append('access_key', '66d7fffa-86bb-4037-bdcf-9d74d375b4c2');
 
-    const data = await response.json();
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
 
-    if (data.success) {
-      setResult('Form Submitted Successfully');
-      event.target.reset();
+      const data = await response.json();
+
+      if (data.success) {
+        setResult('Form Submitted Successfully');
+        event.target.reset();
+      } else {
+        console.log('Error', data);
+        setResult(data.message);
+      }
     } else {
-      console.log('Error', data);
-      setResult(data.message);
+      console.error('Unexpected event target type:', event.target);
     }
   };
 
@@ -75,26 +78,31 @@ export function Form() {
 export function MobileForm() {
   const [result, setResult] = React.useState('');
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult('Sending....');
-    const formData = new FormData(event.target);
 
-    formData.append('access_key', '6e6c8643-b395-49a8-9bcb-6852fdld943d');
+    if (event.target instanceof HTMLFormElement) {
+      const formData = new FormData(event.target);
 
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: formData,
-    });
+      formData.append('access_key', '66d7fffa-86bb-4037-bdcf-9d74d375b4c2');
 
-    const data = await response.json();
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
 
-    if (data.success) {
-      setResult('Form Submitted Successfully');
-      event.target.reset();
+      const data = await response.json();
+
+      if (data.success) {
+        setResult('Form Submitted Successfully');
+        event.target.reset();
+      } else {
+        console.log('Error', data);
+        setResult(data.message);
+      }
     } else {
-      console.log('Error', data);
-      setResult(data.message);
+      console.error('Unexpected event target type:', event.target);
     }
   };
 
@@ -102,9 +110,7 @@ export function MobileForm() {
     <div
       style={{
         backgroundColor: 'rgba(255, 255, 255, 0.9)',
-        // width: 250,
         maxWidth: '95%',
-        // maxWidth: '90%',
         padding: 20,
         paddingLeft: 40,
         paddingRight: 40,
