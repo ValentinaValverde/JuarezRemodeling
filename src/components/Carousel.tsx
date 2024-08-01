@@ -1,19 +1,19 @@
 import { useState } from 'react';
 
-export function Carousel(images: []) {
+export function Carousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState<string>('');
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const next = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 4) % images.length);
   };
 
-  const openModal = (image: string) => {
+  const openModal = (image) => {
     setSelectedImage(image);
   };
 
   const closeModal = () => {
-    setSelectedImage('');
+    setSelectedImage(null);
   };
 
   return (
@@ -124,20 +124,20 @@ export function Carousel(images: []) {
   );
 }
 
-export function TabletCarousel(images: []) {
+export function TabletCarousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState<string>(' ');
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const goToNext = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
   };
 
-  const openModal = (image: string) => {
+  const openModal = (image) => {
     setSelectedImage(image);
   };
 
   const closeModal = () => {
-    setSelectedImage(' ');
+    setSelectedImage(null);
   };
 
   const carouselImageStyle = {
@@ -283,20 +283,20 @@ export function TabletCarousel(images: []) {
   );
 }
 
-export function MobileCarousel(images: []) {
+export function MobileCarousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState<string>(' ');
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  const openModal = (image: string) => {
+  const openModal = (image) => {
     setSelectedImage(image);
   };
 
   const closeModal = () => {
-    setSelectedImage(' ');
+    setSelectedImage(null);
   };
 
   return (
