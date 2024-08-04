@@ -78,3 +78,29 @@ export default function GoogleReviews() {
     </>
   );
 }
+
+// import { useEffect } from 'react';
+
+// export default function GoogleReviews() {
+//   useEffect(() => {
+//     // Check if the script already exists
+//     if (
+//       !document.querySelector(
+//         `script[src='https://widgets.sociablekit.com/google-reviews/widget.js']`
+//       )
+//     ) {
+//       const script = document.createElement('script');
+//       script.src = 'https://widgets.sociablekit.com/google-reviews/widget.js';
+//       script.async = true;
+//       script.defer = true;
+//       document.body.appendChild(script);
+
+//       // Clean up the script when the component unmounts
+//       return () => {
+//         document.body.removeChild(script);
+//       };
+//     }
+//   }, []);
+
+//   return <div className="sk-ww-google-reviews" data-embed-id="25445247"></div>;
+// }
