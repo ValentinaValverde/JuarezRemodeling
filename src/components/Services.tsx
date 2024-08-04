@@ -13,10 +13,15 @@ export function Services() {
       id="services"
       style={{
         display: 'flex',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
         alignItems: 'flex-start',
         flexWrap: 'wrap',
         marginTop: 100,
+
+        // spacing
+        padding: 50,
+        paddingRight: 100,
+        paddingLeft: 100,
       }}
     >
       <div

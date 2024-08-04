@@ -6,17 +6,19 @@ export function Contact() {
     <div
       id="contact"
       style={{
-        // backgroundColor: 'rgba(0, 0, 0, 0.5)',
         backgroundImage: `url(${image})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'bottom',
 
         display: 'flex',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
         alignItems: 'flex-end',
 
+        // spacing
         padding: 50,
+        paddingRight: 100,
+        paddingLeft: 100,
       }}
     >
       <div>

@@ -4,11 +4,15 @@ export function About() {
       <div
         id="about"
         style={{
-          padding: 50,
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
           marginBottom: 100,
+
+          // spacing
+          padding: 50,
+          paddingRight: 100,
+          paddingLeft: 100,
         }}
       >
         <div>

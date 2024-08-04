@@ -66,11 +66,16 @@ export function Portfolio() {
     >
       <div
         style={{
-          padding: 50,
+          // padding: 50,
           display: 'flex',
-          justifyContent: 'space-around',
+          justifyContent: 'space-between',
           alignItems: 'flex-start',
           flexWrap: 'wrap',
+
+          // spacing
+          padding: 50,
+          paddingRight: 100,
+          paddingLeft: 100,
         }}
       >
         <div style={{ width: 500 }}>
