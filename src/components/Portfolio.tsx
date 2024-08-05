@@ -4,27 +4,27 @@ import { Carousel, MobileCarousel, TabletCarousel } from './Carousel';
 import DesktopBackgroundImage from '../assets/images/portfolio-background.png';
 import TabletBackgroundImage from '../assets/images/portfolio-background-tablet.png';
 
-import Image1 from '../assets/images/CompleteHome/full home-01.png';
-import Image2 from '../assets/images/CompleteHome/full home-02.png';
-import Image3 from '../assets/images/CompleteHome/full home-03.png';
-import Image4 from '../assets/images/CompleteHome/full home-04.png';
-import Image5 from '../assets/images/CompleteHome/full home-05.png';
-import Image6 from '../assets/images/CompleteHome/full home-06.png';
-import Image7 from '../assets/images/CompleteHome/full home-7.png';
-import Image8 from '../assets/images/CompleteHome/full home-8.png';
-import Image9 from '../assets/images/CompleteHome/full home-9.png';
-import Image10 from '../assets/images/CompleteHome/full home-10.png';
-import Image11 from '../assets/images/CompleteHome/full home-11.png';
-import Image12 from '../assets/images/CompleteHome/full home-12.png';
-import Image13 from '../assets/images/CompleteHome/full home-13.png';
+import Image1 from '../assets/images/CompleteHome/full-home-1.jpeg';
+import Image2 from '../assets/images/CompleteHome/full-home-2.jpeg';
+import Image3 from '../assets/images/CompleteHome/full-home-3.jpeg';
+import Image4 from '../assets/images/CompleteHome/full-home-4.jpeg';
+import Image5 from '../assets/images/CompleteHome/full-home-5.jpeg';
+import Image6 from '../assets/images/CompleteHome/full-home-6.jpeg';
+import Image7 from '../assets/images/CompleteHome/full-home-7.jpeg';
+import Image8 from '../assets/images/CompleteHome/full-home-8.jpeg';
+import Image9 from '../assets/images/CompleteHome/full-home-9.jpeg';
+import Image10 from '../assets/images/CompleteHome/full-home-10.jpeg';
+import Image11 from '../assets/images/CompleteHome/full-home-11.jpeg';
+import Image12 from '../assets/images/CompleteHome/full-home-12.jpeg';
+import Image13 from '../assets/images/CompleteHome/full-home-13.jpeg';
 
-import Img1 from '../assets/images/OutdoorOasis/image-01.png';
-import Img2 from '../assets/images/OutdoorOasis/image-02.png';
-import Img3 from '../assets/images/OutdoorOasis/image-03.png';
-import Img4 from '../assets/images/OutdoorOasis/image-04.png';
-import Img5 from '../assets/images/OutdoorOasis/image-05.png';
-import Img6 from '../assets/images/OutdoorOasis/image-06.png';
-import Img7 from '../assets/images/OutdoorOasis/image-07.png';
+import Img1 from '../assets/images/OutdoorOasis/image-01.jpg';
+import Img2 from '../assets/images/OutdoorOasis/image-02.jpg';
+import Img3 from '../assets/images/OutdoorOasis/image-03.jpg';
+import Img4 from '../assets/images/OutdoorOasis/image-04.jpg';
+import Img5 from '../assets/images/OutdoorOasis/image-05.jpg';
+import Img6 from '../assets/images/OutdoorOasis/image-06.jpg';
+import Img7 from '../assets/images/OutdoorOasis/image-07.jpg';
 
 export function Portfolio() {
   const [pressed, setPressed] = useState(false);

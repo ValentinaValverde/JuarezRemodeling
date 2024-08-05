@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 interface CarouselProps {
   images: string[];
+  carouselImage?: string[];
 }
 
 export function Carousel({ images }: CarouselProps) {
@@ -32,26 +33,39 @@ export function Carousel({ images }: CarouselProps) {
             )
             .slice(0, 4)
             .map((image, index) => (
-              <img
-                loading="lazy"
-                key={index}
-                src={image}
-                alt={`Slide ${index}`}
-                onClick={() => openModal(image)}
+              <div
                 style={{
-                  width: '25%',
-                  cursor: 'pointer',
-
-                  paddingTop:
-                    index === 1
-                      ? '50px'
-                      : index === 2
-                      ? '100px'
-                      : index === 3
-                      ? '50px'
-                      : 'none',
+                  overflow: 'hidden',
+                  padding: 10,
                 }}
-              />
+              >
+                <img
+                  loading="lazy"
+                  key={index}
+                  src={image}
+                  alt={`Slide ${index}`}
+                  onClick={() => openModal(image)}
+                  style={{
+                    borderRadius: 25,
+
+                    width: 400,
+                    maxWidth: '100%',
+                    height: 350,
+
+                    cursor: 'pointer',
+                    objectFit: 'cover',
+
+                    marginTop:
+                      index === 1
+                        ? '50px'
+                        : index === 2
+                        ? '100px'
+                        : index === 3
+                        ? '50px'
+                        : 'none',
+                  }}
+                />
+              </div>
             ))}
         </div>
       </div>
@@ -120,7 +134,7 @@ export function Carousel({ images }: CarouselProps) {
             className="modal-content"
             src={selectedImage}
             alt="Selected"
-            // style={{ width: 200 }}
+            style={{ height: '90%', width: 'auto', marginTop: -30 }}
           />
           <span className="close">&times;</span>
         </div>
@@ -144,17 +158,6 @@ export function TabletCarousel({ images }: CarouselProps) {
 
   const closeModal = () => {
     setSelectedImage(null);
-  };
-
-  const carouselImageStyle = {
-    maxWidth: '100%',
-    width: 500,
-    transition: 'transform 0.5s ease',
-  };
-
-  const centerImageStyle = {
-    ...carouselImageStyle,
-    paddingTop: 75,
   };
 
   return (
@@ -234,7 +237,19 @@ export function TabletCarousel({ images }: CarouselProps) {
             loading="lazy"
             src={images[(currentIndex - 1 + images.length) % images.length]}
             alt="Previous"
-            style={{ ...carouselImageStyle }}
+            style={{
+              width: 450,
+              height: 450,
+              maxWidth: '100%',
+              transition: 'transform 0.5s ease',
+
+              borderRadius: 25,
+              marginLeft: 20,
+              marginRight: 20,
+              marginTop: 30,
+
+              objectFit: 'cover',
+            }}
             onClick={() =>
               openModal(
                 images[(currentIndex - 1 + images.length) % images.length]
@@ -244,13 +259,37 @@ export function TabletCarousel({ images }: CarouselProps) {
           <img
             src={images[currentIndex]}
             alt="Current"
-            style={centerImageStyle}
+            style={{
+              width: 450,
+              height: 450,
+              maxWidth: '100%',
+              transition: 'transform 0.5s ease',
+
+              borderRadius: 25,
+              marginLeft: 20,
+              marginRight: 20,
+              marginTop: 105,
+
+              objectFit: 'cover',
+            }}
             onClick={() => openModal(images[currentIndex])}
           />
           <img
             src={images[(currentIndex + 1) % images.length]}
             alt="Next"
-            style={{ ...carouselImageStyle }}
+            style={{
+              width: 450,
+              height: 450,
+              maxWidth: '100%',
+              transition: 'transform 0.5s ease',
+
+              borderRadius: 25,
+              marginLeft: 20,
+              marginRight: 20,
+              marginTop: 30,
+
+              objectFit: 'cover',
+            }}
             onClick={() =>
               openModal(images[(currentIndex + 1) % images.length])
             }
@@ -281,7 +320,9 @@ export function TabletCarousel({ images }: CarouselProps) {
             className="modal-content"
             src={selectedImage}
             alt="Selected"
-            style={{ width: 500 }}
+            // style={{ width: 500 }}
+
+            style={{ width: '150%', marginTop: 60 }}
           />
           <span className="close">&times;</span>
         </div>
@@ -414,7 +455,7 @@ export function MobileCarousel({ images }: CarouselProps) {
             className="modal-content"
             src={selectedImage}
             alt="Selected"
-            style={{ width: 500 }}
+            style={{ width: '100%', marginTop: '15%' }}
           />
           <span className="close">&times;</span>
         </div>
