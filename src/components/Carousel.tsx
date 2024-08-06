@@ -26,7 +26,6 @@ export function Carousel({ images }: CarouselProps) {
       <div className="carousel">
         <div className="carousel-images">
           {images
-            // error here?
             .slice(currentIndex, currentIndex + 4)
             .concat(
               images.slice(0, Math.max(0, (currentIndex + 4) % images.length))
@@ -145,7 +144,6 @@ export function Carousel({ images }: CarouselProps) {
 
 export function TabletCarousel({ images }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  // const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const goToNext = () => {
@@ -320,8 +318,6 @@ export function TabletCarousel({ images }: CarouselProps) {
             className="modal-content"
             src={selectedImage}
             alt="Selected"
-            // style={{ width: 500 }}
-
             style={{ width: '150%', marginTop: 60 }}
           />
           <span className="close">&times;</span>
@@ -355,11 +351,15 @@ export function MobileCarousel({ images }: CarouselProps) {
           <div
             className="mobile-carousel-inner"
             style={{
-              transform: `translateX(-${currentIndex * 80}%)`,
+              transform: `translateX(-${currentIndex * 82}%)`,
             }}
           >
             {images.map((image, index) => (
-              <div className="mobile-carousel-item" key={index}>
+              <div
+                className="mobile-carousel-item"
+                style={{ marginTop: index === currentIndex ? '50px' : '0' }}
+                key={index}
+              >
                 <img
                   loading="lazy"
                   onClick={() => openModal(image)}
@@ -367,7 +367,6 @@ export function MobileCarousel({ images }: CarouselProps) {
                   alt={`Slide ${index}`}
                   style={{
                     cursor: 'pointer',
-                    marginTop: index === currentIndex ? '50px' : '0',
                   }}
                 />
               </div>
