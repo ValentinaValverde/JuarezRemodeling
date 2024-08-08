@@ -41,7 +41,10 @@ export default function GoogleReviews() {
             </div>
 
             <div>
-              <a>
+              <a
+                target="_blank"
+                href="https://www.google.com/search?sca_esv=847412b30e358a21&sca_upv=1&cs=0&output=search&q=Juarez+Remodeling&ludocid=940976682067290749&lsig=AB86z5V35b-8hDbKXykCnGA-K-fp&shndl=-1&shem=vslcca&source=sh/x/kp/local/m1/1&kgs=56d93a7a07fcfaed#lrd=0x8858d798fdfd32c5:0xd0f054e8c8bea7d,1,,,,"
+              >
                 <button className="primary-button">View All Reviews</button>
               </a>
             </div>
@@ -79,7 +82,10 @@ export default function GoogleReviews() {
             </div>
 
             <div>
-              <a>
+              <a
+                target="_blank"
+                href="https://www.google.com/search?sca_esv=847412b30e358a21&sca_upv=1&cs=0&output=search&q=Juarez+Remodeling&ludocid=940976682067290749&lsig=AB86z5V35b-8hDbKXykCnGA-K-fp&shndl=-1&shem=vslcca&source=sh/x/kp/local/m1/1&kgs=56d93a7a07fcfaed#lrd=0x8858d798fdfd32c5:0xd0f054e8c8bea7d,1,,,,"
+              >
                 <button className="primary-button">View All Reviews</button>
               </a>
             </div>
@@ -117,7 +123,10 @@ export default function GoogleReviews() {
             </div>
 
             <div>
-              <a>
+              <a
+                target="_blank"
+                href="https://www.google.com/search?sca_esv=847412b30e358a21&sca_upv=1&cs=0&output=search&q=Juarez+Remodeling&ludocid=940976682067290749&lsig=AB86z5V35b-8hDbKXykCnGA-K-fp&shndl=-1&shem=vslcca&source=sh/x/kp/local/m1/1&kgs=56d93a7a07fcfaed#lrd=0x8858d798fdfd32c5:0xd0f054e8c8bea7d,1,,,,"
+              >
                 <button className="primary-button">View All Reviews</button>
               </a>
             </div>
