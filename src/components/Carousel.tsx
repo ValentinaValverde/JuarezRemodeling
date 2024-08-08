@@ -329,7 +329,6 @@ export function TabletCarousel({ images }: CarouselProps) {
 
 export function MobileCarousel({ images }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  // const [selectedImage, setSelectedImage] = (useState < Image) | (null > null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const nextSlide = () => {
@@ -361,7 +360,7 @@ export function MobileCarousel({ images }: CarouselProps) {
                 key={index}
               >
                 <img
-                  loading="lazy"
+                  // loading="lazy"
                   onClick={() => openModal(image)}
                   src={image}
                   alt={`Slide ${index}`}
