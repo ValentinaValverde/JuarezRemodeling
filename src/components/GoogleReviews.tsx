@@ -3,6 +3,9 @@ import GoogleRating from '../assets/icons/google-rating.png';
 import GoogleFullLogo from '../assets/icons/google-full-logo.png';
 import { GoogleReviewCard } from './GoogleReviewCard';
 
+import HannahIcon from '../assets/icons/HannahIcon.png';
+import UrsularIcon from '../assets/icons/UrsulaIcon.png';
+
 export default function GoogleReviews() {
   const isDesktop = useMediaQuery({ minWidth: 992 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
@@ -152,7 +155,7 @@ export default function GoogleReviews() {
           }
         />
         <GoogleReviewCard
-          photo={''}
+          photo={HannahIcon}
           name={'Hannah Sullivan'}
           date={'08/07/2024'}
           review={
@@ -160,7 +163,7 @@ export default function GoogleReviews() {
           }
         />
         <GoogleReviewCard
-          photo={''}
+          photo={UrsularIcon}
           name={'Ursula Pavlik'}
           date={'08/08/2024'}
           review={
