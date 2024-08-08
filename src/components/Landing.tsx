@@ -30,8 +30,6 @@ export function Landing() {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'flex-end',
-
-          //   backgroundColor: 'pink',
         }}
       >
         <h1
@@ -101,7 +99,6 @@ export function TabletLanding() {
           padding: 50,
           top: 150,
           marginTop: 200,
-          // backgroundColor: 'pink',
         }}
       >
         <h1

@@ -12,7 +12,6 @@ export function InfoCard({ title, text, icon }: Info) {
         justifyContent: 'space-between',
         alignItems: 'flex-start',
         width: 550,
-        // backgroundColor: 'pink',
         marginBottom: 10,
       }}
     >
