@@ -100,7 +100,11 @@ export function Portfolio() {
                       backgroundColor: 'var(--dark-blue)',
                       color: 'white',
                     }
-                  : { border: 'none', backgroundColor: 'white' }
+                  : {
+                      border: 'none',
+                      backgroundColor: 'white',
+                      color: 'var(--dark-blue)',
+                    }
               }
             >
               Outdoor Oasis
@@ -109,7 +113,11 @@ export function Portfolio() {
               onClick={contentChange}
               style={
                 pressed
-                  ? { border: 'none', backgroundColor: 'white' }
+                  ? {
+                      border: 'none',
+                      backgroundColor: 'white',
+                      color: 'var(--dark-blue)',
+                    }
                   : {
                       border: 'none',
                       backgroundColor: 'var(--dark-blue)',
@@ -227,7 +235,11 @@ export function TabletPortfolio() {
                       backgroundColor: 'var(--dark-blue)',
                       color: 'white',
                     }
-                  : { border: 'none', backgroundColor: 'white' }
+                  : {
+                      border: 'none',
+                      backgroundColor: 'white',
+                      color: 'var(--dark-blue)',
+                    }
               }
             >
               Outdoor Oasis
@@ -236,7 +248,11 @@ export function TabletPortfolio() {
               onClick={contentChange}
               style={
                 pressed
-                  ? { border: 'none', backgroundColor: 'white' }
+                  ? {
+                      border: 'none',
+                      backgroundColor: 'white',
+                      color: 'var(--dark-blue)',
+                    }
                   : {
                       border: 'none',
                       backgroundColor: 'var(--dark-blue)',
@@ -367,7 +383,11 @@ export function MobilePortfolio() {
                       backgroundColor: 'var(--dark-blue)',
                       color: 'white',
                     }
-                  : { border: 'none', backgroundColor: 'white' }
+                  : {
+                      border: 'none',
+                      backgroundColor: 'white',
+                      color: 'var(--dark-blue)',
+                    }
               }
             >
               Outdoor Oasis
@@ -376,7 +396,11 @@ export function MobilePortfolio() {
               onClick={contentChange}
               style={
                 pressed
-                  ? { border: 'none', backgroundColor: 'white' }
+                  ? {
+                      border: 'none',
+                      backgroundColor: 'white',
+                      color: 'var(--dark-blue)',
+                    }
                   : {
                       border: 'none',
                       backgroundColor: 'var(--dark-blue)',
