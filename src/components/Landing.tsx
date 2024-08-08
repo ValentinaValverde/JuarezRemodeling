@@ -150,7 +150,7 @@ export function MobileLanding() {
         style={{
           filter: 'brightness(75%)',
           overflow: 'hidden',
-          height: 600,
+          height: '100vh',
         }}
       >
         <video
@@ -166,7 +166,7 @@ export function MobileLanding() {
         style={{
           position: 'absolute',
           padding: 20,
-          top: 150,
+          top: 200,
 
           marginTop: 250,
         }}
