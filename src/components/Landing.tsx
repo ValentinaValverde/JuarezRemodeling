@@ -1,5 +1,6 @@
 import { Link } from 'react-scroll';
 import HeroVideo from '../assets/videos/HeroVideo.mp4';
+import MobileHeroVideo from '../assets/videos/MobileHeroVideo.mp4';
 
 export function Landing() {
   return (
@@ -148,14 +149,13 @@ export function MobileLanding() {
       <div
         style={{
           filter: 'brightness(75%)',
-          height: 600,
-          backgroundColor: 'black',
           overflow: 'hidden',
+          height: 600,
         }}
       >
         <video
-          src={HeroVideo}
-          style={{ height: '100%' }}
+          src={MobileHeroVideo}
+          style={{ height: '100%', objectFit: 'cover', width: '100%' }}
           autoPlay
           loop
           muted
