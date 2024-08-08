@@ -39,7 +39,6 @@ export function Carousel({ images }: CarouselProps) {
                 }}
               >
                 <img
-                  loading="lazy"
                   key={index}
                   src={image}
                   alt={`Slide ${index}`}
@@ -129,7 +128,6 @@ export function Carousel({ images }: CarouselProps) {
       {selectedImage && (
         <div className="modal" onClick={closeModal}>
           <img
-            loading="lazy"
             className="modal-content"
             src={selectedImage}
             alt="Selected"
@@ -232,7 +230,6 @@ export function TabletCarousel({ images }: CarouselProps) {
           }}
         >
           <img
-            loading="lazy"
             src={images[(currentIndex - 1 + images.length) % images.length]}
             alt="Previous"
             style={{
@@ -314,7 +311,6 @@ export function TabletCarousel({ images }: CarouselProps) {
           onClick={closeModal}
         >
           <img
-            loading="lazy"
             className="modal-content"
             src={selectedImage}
             alt="Selected"
@@ -360,7 +356,6 @@ export function MobileCarousel({ images }: CarouselProps) {
                 key={index}
               >
                 <img
-                  // loading="lazy"
                   onClick={() => openModal(image)}
                   src={image}
                   alt={`Slide ${index}`}
@@ -449,7 +444,6 @@ export function MobileCarousel({ images }: CarouselProps) {
           onClick={closeModal}
         >
           <img
-            loading="lazy"
             className="modal-content"
             src={selectedImage}
             alt="Selected"
