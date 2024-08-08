@@ -150,12 +150,12 @@ export function MobileLanding() {
         style={{
           filter: 'brightness(60%)',
           overflow: 'hidden',
-          height: '100vh',
+          height: 600,
         }}
       >
         <video
           src={MobileHeroVideo}
-          style={{ height: '100%', objectFit: 'cover', width: '100%' }}
+          style={{ objectFit: 'cover', width: '100%' }}
           autoPlay
           loop
           muted
@@ -168,7 +168,7 @@ export function MobileLanding() {
           position: 'absolute',
           padding: 20,
           top: 200,
-          marginTop: 250,
+          marginTop: 150,
         }}
       >
         <h1
