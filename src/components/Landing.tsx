@@ -148,7 +148,7 @@ export function MobileLanding() {
     <>
       <div
         style={{
-          filter: 'brightness(75%)',
+          filter: 'brightness(60%)',
           overflow: 'hidden',
           height: '100vh',
         }}
@@ -167,7 +167,6 @@ export function MobileLanding() {
           position: 'absolute',
           padding: 20,
           top: 200,
-
           marginTop: 250,
         }}
       >

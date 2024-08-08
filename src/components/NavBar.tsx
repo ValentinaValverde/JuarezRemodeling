@@ -254,12 +254,12 @@ export function MobileNavbar() {
               flexDirection: 'column',
               justifyContent: 'space-around',
               alignItems: 'flex-end',
-              padding: 50,
+              padding: 40,
 
               position: 'fixed',
               top: 0,
               right: 0,
-              width: '25%',
+              width: '30%',
               height: '100%',
 
               boxShadow: '5px 0px 10px black',
@@ -279,44 +279,41 @@ export function MobileNavbar() {
               }}
             >
               <Link
-                className="white-text"
+                className="white-text mobile-navbar-link"
                 to="about"
                 smooth={true}
                 duration={800}
-                style={{ fontSize: 30, marginTop: 0, marginBottom: 20 }}
                 onClick={linkClick}
               >
                 about us
               </Link>
 
               <Link
-                className="white-text"
+                className="white-text mobile-navbar-link"
                 to="portfolio"
                 smooth={true}
                 duration={900}
-                style={{ fontSize: 30, marginTop: 0, marginBottom: 20 }}
+                // style={{  }}
                 onClick={linkClick}
               >
                 portfolio
               </Link>
 
               <Link
-                className="white-text"
+                className="white-text mobile-navbar-link"
                 to="services"
                 smooth={true}
                 duration={1000}
-                style={{ fontSize: 30, marginTop: 0, marginBottom: 20 }}
                 onClick={linkClick}
               >
                 services
               </Link>
 
               <Link
-                className="white-text"
+                className="white-text mobile-navbar-link"
                 to="contact"
                 smooth={true}
                 duration={1100}
-                style={{ fontSize: 30, marginTop: 0, marginBottom: 20 }}
                 onClick={linkClick}
               >
                 contact

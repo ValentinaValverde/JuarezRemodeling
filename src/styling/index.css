@@ -86,9 +86,6 @@ nav {
   align-items: center;
 }
 
-/* form{
-  } */
-
 input {
   background-color: transparent;
   border: none;
@@ -108,12 +105,7 @@ textarea {
   padding: 10px;
   font-family: 'Quicksand';
   max-width: 90%;
-  /* min-width: 475px; */
 }
-
-/* input[type='text']:focus {
-    border: none;
-  } */
 
 ::placeholder {
   color: var(--dark-blue);

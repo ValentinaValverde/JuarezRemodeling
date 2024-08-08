@@ -55,6 +55,12 @@
   align-items: center;
 }
 
+.mobile-navbar-link {
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
 .exp-container {
   display: flex;
   flex-direction: row;
