@@ -159,6 +159,7 @@ export function MobileLanding() {
           autoPlay
           loop
           muted
+          playsInline
         ></video>
       </div>
 
