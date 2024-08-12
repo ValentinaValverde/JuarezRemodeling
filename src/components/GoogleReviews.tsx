@@ -18,6 +18,8 @@ export default function GoogleReviews() {
           <div
             style={{
               margin: 10,
+              marginTop: 30,
+              marginBottom: 10,
               display: 'flex',
               justifyContent: 'space-around',
               alignItems: 'center',
@@ -60,6 +62,7 @@ export default function GoogleReviews() {
           <div
             style={{
               margin: 10,
+              marginTop: 30,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -101,6 +104,7 @@ export default function GoogleReviews() {
           <div
             style={{
               margin: 10,
+              marginTop: 30,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
