@@ -42,7 +42,7 @@ export default function GoogleReviews() {
             </div>
 
             <div>
-              <p style={{ fontSize: 30 }}>Tranformation Testimonials</p>
+              <p style={{ fontSize: 30 }}>Transformation Testimonials</p>
             </div>
 
             <div>
@@ -84,7 +84,7 @@ export default function GoogleReviews() {
             </div>
 
             <div>
-              <p style={{ fontSize: 30 }}>Tranformation Testimonials</p>
+              <p style={{ fontSize: 30 }}>Transformation Testimonials</p>
             </div>
 
             <div>
@@ -126,7 +126,7 @@ export default function GoogleReviews() {
             </div>
 
             <div>
-              <p style={{ fontSize: 30 }}>Tranformation Testimonials</p>
+              <p style={{ fontSize: 30 }}>Transformation Testimonials</p>
             </div>
 
             <div>
